@@ -1,8 +1,9 @@
-# Power Off a VSI using IBM Cloud Functions
+# Power Off a VSI using IBM Cloud Functions 💻
 
 Este repositorio explica como apagar y prender de forma automatizada un VSI (Servidor virtual) en IBM Cloud utilizando Functions de IBM Cloud.
-Requirements:
+
 Requisitos:
+
 * Docker CE instalado en su maquina.
 * Python 3.7 para algunas pruebas locales.
 * Sistema operativo linux.
@@ -106,7 +107,7 @@ ibmcloud fn rule create vsi-classic-power-off_1800weekday 1800weekday vsi-classi
 
 Imagen
 
-La Funcion es creada con un trigger y una action!
+La Funcion es creada con un trigger y una action!😃✔️
 
 Puedes tener una acción con varios trigger . Cada trigger con un nombre VSI diferente.
 
