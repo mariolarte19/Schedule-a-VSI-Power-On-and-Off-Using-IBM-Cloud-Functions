@@ -9,7 +9,6 @@ Requisitos:
 
 Los pasos crean una acción en IBM Cloud Functions basada en un fragmento de código de Python 3.7.
 
-### The Hard Way
 1. Clonar este repositorio usando el comando "git clone" y acceder a la carpeta de la aplicación.
 Ejemplo
 ```
@@ -41,9 +40,9 @@ ibmcloud login
 ibmcloud account orgs
 ibmcloud account spaces
 ibmcloud target -o "IBM" -s "Demo"                        # Asocia 
-$ ibmcloud target -g Landingzone -r us-south              # Especifica el grupo de recursos y la región a la que pertenece la función 
-$ ibmcloud fn namespace create poweroff-on-vsi            # Crea el espacio de nombres en el que se implementa la acción.
-$ ibmcloud fn property set --namespace power-off-on-vsi   # Especifica el espacio de nombres creado anteriormente como el destino de despliegue de acción
+ibmcloud target -g Landingzone -r us-south              # Especifica el grupo de recursos y la región a la que pertenece la función 
+ibmcloud fn namespace create poweroff-on-vsi            # Crea el espacio de nombres en el que se implementa la acción.
+ibmcloud fn property set --namespace power-off-on-vsi   # Especifica el espacio de nombres creado anteriormente como el destino de despliegue de acción
 ```
 
 6. Crea una acción . Al mismo tiempo, implemente el paquete (archivo zip).
@@ -57,6 +56,7 @@ ibmcloud fn action create vsi-classic-power-off vsi-classic-power.zip --kind pyt
 ```
 
 7. Open the IBM Cloud console
+
 ```
 open https://cloud.ibm.com
 ```
@@ -85,7 +85,7 @@ user "2059386_mario.olarte@ibm.com"
 ```
 
 
-12.incie la acción con el botón "Inicio" en la pantalla "Código" y verifique la operación. Si VSI ya se inició.
+12.Incie la acción con el botón "Inicio" en la pantalla "Código" y verifique la operación. Si VSI ya se inició.
 
 Imagen
 
